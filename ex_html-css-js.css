@@ -25,7 +25,7 @@ form {
  input,select,textarea{
    border:  #eaeaea 1px solid;
  }
- #enviar {
+ #enviar, #cambiar-fondo {
    margin-top: 20px;
    background-color: #0077b6;
    color: white;
@@ -40,3 +40,14 @@ form {
    padding: 10px;
    border-radius: 10px;
  }
+ .oscuro{
+   background-color: black;
+   color: white;
+ }
+ #enviar:hover {
+   background-color: white;
+   border-color: lightgrey;
+   color:blue;
+   cursor: pointer;
+ }
+ 

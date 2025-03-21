@@ -19,6 +19,8 @@
             <input type="email" id="email" placeholder="Email" required>
             <label><br>Teléfono:</label>
             <input type="tel" id="telefono" placeholder="Teléfono" min="9" max="9" required>
+            <label><br>Direccion:</label>
+            <input type="text" id="direccion" placeholder="Dirección" required>
             <label><br>Hora de entrega: </label>
             <input type="time" id="hora" placeholder="Hora de recogida" required>
         </div>
@@ -26,15 +28,15 @@
         <div id="TIPOS-PESCADO">
             <h2 id="seleccion">Selección</h2>
             <h4>Tipo de pescado</h4>
-            <input type="radio" id="calamar" name="pescado" required>Calamares
-            <input type="radio" id="adobo" name="pescado" required>Adobo
-            <input type="radio" id="pescado" name="pescado" required>Boquerones
+            <input type="radio" id="calamar" name="pescado" value="6" required>Calamares
+            <input type="radio" id="adobo" name="pescado" value="7" required>Adobo
+            <input type="radio" id="pescado" name="pescado" value="8" required>Boquerones
             <h4 id="racciones">Nº de raciones</h4>
             <input type="number" id="raciones" min="1" max="5" required>
             <h4 id="acompañamiento">Acompañamiento</h4>
-            <input type="checkbox" id="patata" name="acompañamiento" id="Patatas">Patatas fritas(4€)
-            <input type="checkbox" id="ensaladilla" name="acompañamiento" id="Patatas">Ensaladilla(4€)
-            <input type="checkbox" id="manzanilla" name="acompañamiento" id="Patatas">Botella de Manzanilla(4€)
+            <input type="checkbox" id="patata" name="acompañamiento" id="Patatas" value="4">Patatas fritas(4€)
+            <input type="checkbox" id="ensaladilla" name="acompañamiento" id="Patatas" value="4">Ensaladilla(4€)
+            <input type="checkbox" id="manzanilla" name="acompañamiento" id="Patatas" value="4">Botella de Manzanilla(4€)
         </div>
         <div id="METODOS PAGO">
             <h2>Métodos de pago</h2>
@@ -47,12 +49,15 @@
         <div id="INSTRUCCIONES-ADICIONALES">
             <h2>Instrucciones addicionales</h2>
             <input type="text"id="ia" name="ia" placeholder="Instrucciones adicionales.." maxlength="150">
+            <p>Carácteres: <span id="cuenta">0</span>/ 150</p>
         </div>
+        <p>Precio total: <span="precio">0</span=> €</p>
         <div id="BOTON">
             <input type="submit" id="enviar" name="enviar" value="Enviar">
-            <button id="cambiar-fondo">Modo Oscuro</button>
+            <br>
         </div>
     </form>
+    <button id="cambiar-fondo">Modo Oscuro</button>
     <footer id="pie-pagina">Creado por(Israel Corrales Borrego)</footer>
     <script src="ex_html-css-js.js"></script>
 </body>

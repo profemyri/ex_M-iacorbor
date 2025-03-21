@@ -7,7 +7,7 @@
 </head>
 <body>
    <h1>¡¡Pide aquí tu rico pescaíto!!</h1>
-    <img src="pescado_frito.jpg" alt="Bandeja pescado frito" width="300" height="200">
+    <img src="pescado_frito.jpg" alt="Bandeja pescado frito">
     <form id="formulario">
         <div id="DATOS-CLIENTE">
             <h2 id="datos">Introduce tus datos</h2>
@@ -32,25 +32,28 @@
             <h4 id="racciones">Nº de raciones</h4>
             <input type="number" id="raciones" min="1" max="5" required>
             <h4 id="acompañamiento">Acompañamiento</h4>
-            <input type="checkbox" id="patata" name="acompañamiento" id="Patatas">Patatas
-            <input type="checkbox" id="ensaladilla" name="acompañamiento" id="Patatas">Ensaladilla
-            <input type="checkbox" id="manzanilla" name="acompañamiento" id="Patatas">Botella de Manzanilla
+            <input type="checkbox" id="patata" name="acompañamiento" id="Patatas">Patatas fritas(4€)
+            <input type="checkbox" id="ensaladilla" name="acompañamiento" id="Patatas">Ensaladilla(4€)
+            <input type="checkbox" id="manzanilla" name="acompañamiento" id="Patatas">Botella de Manzanilla(4€)
         </div>
         <div id="METODOS PAGO">
             <h2>Métodos de pago</h2>
-            <input type="radio" id="tarjeta" name="pago" value="tarjeta" required>Tarjeta
-            <input type="radio" id="efectivo" name="pago" value="efectivo" required>Efectivo
-            <input type="radio" id="paypal" name="pago" value="paypal" required>Paypal  
+            <select>
+            <option id="tarjeta" name="pago" value="tarjeta" required>Tarjeta
+            <option id="efectivo" name="pago" value="efectivo" required>Efectivo
+            <option id="paypal" name="pago" value="paypal" required>Paypal  
+            </select>   
         </div>
         <div id="INSTRUCCIONES-ADICIONALES">
             <h2>Instrucciones addicionales</h2>
-            <input type="text"id="ia" name="ia" placeholder="Instrucciones adiciionales.." maxlength="150">
+            <input type="text"id="ia" name="ia" placeholder="Instrucciones adicionales.." maxlength="150">
         </div>
         <div id="BOTON">
             <input type="submit" id="enviar" name="enviar" value="Enviar">
+            <button id="cambiar-fondo">Modo Oscuro</button>
         </div>
     </form>
-    <footer id="pie-pagina">Israel Corrales Borrego</footer>
+    <footer id="pie-pagina">Creado por(Israel Corrales Borrego)</footer>
     <script src="ex_html-css-js.js"></script>
 </body>
 </html>
